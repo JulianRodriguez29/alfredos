@@ -19,3 +19,4 @@ julian:
   email: julian@alfredo.com
   username: julian
   password_digest: <%= BCrypt::Password.create('testme', cost: 5) %>
+  admin: true

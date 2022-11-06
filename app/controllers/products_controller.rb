@@ -24,12 +24,12 @@ class ProductsController < ApplicationController
     end
   end
 
-  def edit 
-    product
+  def edit
+    authorize! product 
   end
 
   def update 
-    product
+    authorize! product 
 
     if @product.update(product_params)
       redirect_to products_path, notice: t('.updated')
@@ -39,7 +39,7 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    product
+    authorize! product 
     @product.destroy
 
     redirect_to products_path, notice: t('.destroyed'), status: :see_other
