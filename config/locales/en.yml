@@ -3,23 +3,21 @@ en:
   meta_title: 'Perfumes and clothes'
   activerecord:
     models:
-      product: 'Product'
+      product: 'Product'  
+      user: User
+      category: Category
     attributes:
       product:
         title: 'Title'
         description: 'Description'
         price: 'Price'
         photo: 'Photo'
-    errors:
-      models:
-        product:
-          attributes:
-            title:
-              blank: "can't be blank"
-            description:
-              blank: "can't be blank"
-            price:
-              blank: "can't be blank"
+      user: 
+        email: 'Email'
+        username: 'Username'
+        password: 'Password'
+      category: 
+        name: 'Name'
   common:
     confirm: 'Are you sure?'
     back: 'Go back'
@@ -27,14 +25,20 @@ en:
   shared:
     header:
       add: 'Add product'
+      categories: 'Categories'
+      login: 'Login'
+      register: 'Register'
+      logout: 'Logout'
   authentication:
     users:
       create:
         created: 'Your account has been created'
     sessions:
       create:
-        created: 'Welcome'
+        created: 'Welcome!'
         failed: 'Invalid login!'
+      destroy: 
+        destroyed: 'Session ended!'
   products:
     edit:
       title: 'Edit product'

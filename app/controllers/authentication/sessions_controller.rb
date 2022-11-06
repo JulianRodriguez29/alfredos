@@ -13,14 +13,12 @@ class Authentication::SessionsController < ApplicationController
     else
       redirect_to new_session_path, alert: t('.failed')
     end
-    # @user = User.new(user_params)
+  end
 
-    # if @user.save
-    #   redirect_to products_path, notice: t('.created')
-    # else
-    #   render :new, status: :unprocessable_entity
-    # end
+  def destroy
+    session.delete(:user_id)
 
+    redirect_to products_path, notice: t('.destroyed')
   end
 
   # private
