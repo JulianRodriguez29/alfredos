@@ -23,6 +23,7 @@ es:
     back: 'Volver'
     not_logged_in: 'Tienes que hacer login o crearte una cuenta'
     not_authorized: 'No tienes permiso para está acción'
+    not_found: 'No se ha encontrado!'
   shared:
     header:
       add: 'Añadir producto'
@@ -57,6 +58,7 @@ es:
     show:
       edit: 'Editar producto'
       delete: 'Borrar producto'
+      view_more_products: 'Ver mas productos de %{username}'
     create:
       created: 'Tu producto se ha creado correctamente'
     update:

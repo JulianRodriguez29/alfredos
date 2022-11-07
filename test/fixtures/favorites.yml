@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+julian_switch:
+  user: julian
+  product: switch
+
+paco_ps5:
+  user: paco
+  product: ps5

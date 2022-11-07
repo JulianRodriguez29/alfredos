@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :sessions, only: [:new, :create, :destroy], path: '/login', path_name: { new: '/'}
   end
 
+  resources :favorites, only: :create
+  resources :users, only: :show, path: '/user', param: :username
   resources :categories, except: :show
   resources :products, path: '/'
 end
