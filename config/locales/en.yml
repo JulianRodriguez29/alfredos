@@ -25,7 +25,7 @@ en:
     not_authorized: "You don't have permissions for this action"
     not_found: 'Not found!'
   shared:
-    header:
+    items:
       add: 'Add product'
       categories: 'Categories'
       login: 'Login'
