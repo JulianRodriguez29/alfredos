@@ -12,22 +12,21 @@ es:
         description: 'Descripción'
         price: 'Precio'
         photo: 'Foto'
-      user: 
+      user:
         email: 'Correo electrónico'
         username: 'Usuario'
         password: 'Contraseña'
-      category: 
+      category:
         name: 'Nombre'
   common:
     confirm: '¿Estás seguro?'
     back: 'Volver'
     not_logged_in: 'Tienes que hacer login o crearte una cuenta'
-    not_authorized: 'No tienes permiso para está acción'
-    not_found: 'No se ha encontrado!'
+    not_authorized: 'No tienes permisos para esta acción'
+    not_found: 'No se ha encontrado'
   shared:
     items:
       add: 'Añadir producto'
-      categories: 'Categorias'
       login: 'Acceso'
       register: 'Registro'
       logout: 'Salir'
@@ -35,18 +34,24 @@ es:
   authentication:
     users:
       create:
-        created: 'Tu cuenta se ha creado'
+        created: 'Tu cuenta se ha creado!'
     sessions:
       create:
         created: 'Bienvenido!'
-        failed: 'Login inválido'
-      destroy: 
-        destroyed: 'Tu sesión ha terminado'
+        failed: 'Login inválido!'
+      destroy:
+        destroyed: 'Tu sesión ha terminado! Hasta la próxima'
   products:
     edit:
       title: 'Editar producto'
     new:
       title: 'Añadir producto'
+    form:
+      title_placeholder: '¿Qué quieres vender?'
+      description_placeholder: '¿Puedes describir el producto?'
+      price_placeholder: '¿Cuánto cuesta?'
+      category_placeholder: '¿En qué categoría encaja mejor?'
+      submit: 'Véndelo!'
     index:
       title: 'Productos:'
       all: 'Todos'
@@ -59,7 +64,7 @@ es:
     show:
       edit: 'Editar producto'
       delete: 'Borrar producto'
-      view_more_products: 'Ver mas productos de %{username}'
+      view_more_products: 'Ver más productos de %{username}'
     create:
       created: 'Tu producto se ha creado correctamente'
     update:
